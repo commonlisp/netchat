@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C70496E51874D5A8005A8439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70496E41874D5A8005A8439 /* UIKit.framework */; };
+		C70496E71874D5A8005A8439 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70496E61874D5A8005A8439 /* Foundation.framework */; };
+		C70496E91874D5A8005A8439 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70496E81874D5A8005A8439 /* CoreGraphics.framework */; };
+		C70496EF1874D5A8005A8439 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C70496ED1874D5A8005A8439 /* InfoPlist.strings */; };
+		C70496F11874D5A8005A8439 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C70496F01874D5A8005A8439 /* main.m */; };
+		C70496F51874D5A8005A8439 /* NetChatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C70496F41874D5A8005A8439 /* NetChatAppDelegate.m */; };
+		C70496F71874D5A8005A8439 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C70496F61874D5A8005A8439 /* Default.png */; };
+		C70496F91874D5A8005A8439 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C70496F81874D5A8005A8439 /* Default@2x.png */; };
+		C70496FB1874D5A8005A8439 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C70496FA1874D5A8005A8439 /* Default-568h@2x.png */; };
+		C70496FE1874D5A8005A8439 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70496FC1874D5A8005A8439 /* MainStoryboard.storyboard */; };
+		C70497011874D5A8005A8439 /* NetChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C70497001874D5A8005A8439 /* NetChatViewController.m */; };
+		C70497091874D5A8005A8439 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70497081874D5A8005A8439 /* SenTestingKit.framework */; };
+		C704970A1874D5A8005A8439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70496E41874D5A8005A8439 /* UIKit.framework */; };
+		C704970B1874D5A8005A8439 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70496E61874D5A8005A8439 /* Foundation.framework */; };
+		C70497131874D5A9005A8439 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C70497111874D5A9005A8439 /* InfoPlist.strings */; };
+		C70497161874D5A9005A8439 /* NetChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C70497151874D5A9005A8439 /* NetChatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C704970C1874D5A8005A8439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C70496D91874D5A7005A8439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70496E01874D5A8005A8439;
+			remoteInfo = NetChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C70496E11874D5A8005A8439 /* NetChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70496E41874D5A8005A8439 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C70496E61874D5A8005A8439 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C70496E81874D5A8005A8439 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C70496EC1874D5A8005A8439 /* NetChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NetChat-Info.plist"; sourceTree = "<group>"; };
+		C70496EE1874D5A8005A8439 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C70496F01874D5A8005A8439 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C70496F21874D5A8005A8439 /* NetChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetChat-Prefix.pch"; sourceTree = "<group>"; };
+		C70496F31874D5A8005A8439 /* NetChatAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetChatAppDelegate.h; sourceTree = "<group>"; };
+		C70496F41874D5A8005A8439 /* NetChatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetChatAppDelegate.m; sourceTree = "<group>"; };
+		C70496F61874D5A8005A8439 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C70496F81874D5A8005A8439 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C70496FA1874D5A8005A8439 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C70496FD1874D5A8005A8439 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C70496FF1874D5A8005A8439 /* NetChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetChatViewController.h; sourceTree = "<group>"; };
+		C70497001874D5A8005A8439 /* NetChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetChatViewController.m; sourceTree = "<group>"; };
+		C70497071874D5A8005A8439 /* NetChatTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetChatTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70497081874D5A8005A8439 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C70497101874D5A9005A8439 /* NetChatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NetChatTests-Info.plist"; sourceTree = "<group>"; };
+		C70497121874D5A9005A8439 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C70497141874D5A9005A8439 /* NetChatTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetChatTests.h; sourceTree = "<group>"; };
+		C70497151874D5A9005A8439 /* NetChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetChatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C70496DE1874D5A8005A8439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70496E51874D5A8005A8439 /* UIKit.framework in Frameworks */,
+				C70496E71874D5A8005A8439 /* Foundation.framework in Frameworks */,
+				C70496E91874D5A8005A8439 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70497031874D5A8005A8439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70497091874D5A8005A8439 /* SenTestingKit.framework in Frameworks */,
+				C704970A1874D5A8005A8439 /* UIKit.framework in Frameworks */,
+				C704970B1874D5A8005A8439 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C70496D81874D5A7005A8439 = {
+			isa = PBXGroup;
+			children = (
+				C70496EA1874D5A8005A8439 /* NetChat */,
+				C704970E1874D5A8005A8439 /* NetChatTests */,
+				C70496E31874D5A8005A8439 /* Frameworks */,
+				C70496E21874D5A8005A8439 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C70496E21874D5A8005A8439 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C70496E11874D5A8005A8439 /* NetChat.app */,
+				C70497071874D5A8005A8439 /* NetChatTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C70496E31874D5A8005A8439 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C70496E41874D5A8005A8439 /* UIKit.framework */,
+				C70496E61874D5A8005A8439 /* Foundation.framework */,
+				C70496E81874D5A8005A8439 /* CoreGraphics.framework */,
+				C70497081874D5A8005A8439 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C70496EA1874D5A8005A8439 /* NetChat */ = {
+			isa = PBXGroup;
+			children = (
+				C70496F31874D5A8005A8439 /* NetChatAppDelegate.h */,
+				C70496F41874D5A8005A8439 /* NetChatAppDelegate.m */,
+				C70496FC1874D5A8005A8439 /* MainStoryboard.storyboard */,
+				C70496FF1874D5A8005A8439 /* NetChatViewController.h */,
+				C70497001874D5A8005A8439 /* NetChatViewController.m */,
+				C70496EB1874D5A8005A8439 /* Supporting Files */,
+			);
+			path = NetChat;
+			sourceTree = "<group>";
+		};
+		C70496EB1874D5A8005A8439 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C70496EC1874D5A8005A8439 /* NetChat-Info.plist */,
+				C70496ED1874D5A8005A8439 /* InfoPlist.strings */,
+				C70496F01874D5A8005A8439 /* main.m */,
+				C70496F21874D5A8005A8439 /* NetChat-Prefix.pch */,
+				C70496F61874D5A8005A8439 /* Default.png */,
+				C70496F81874D5A8005A8439 /* Default@2x.png */,
+				C70496FA1874D5A8005A8439 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C704970E1874D5A8005A8439 /* NetChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				C70497141874D5A9005A8439 /* NetChatTests.h */,
+				C70497151874D5A9005A8439 /* NetChatTests.m */,
+				C704970F1874D5A9005A8439 /* Supporting Files */,
+			);
+			path = NetChatTests;
+			sourceTree = "<group>";
+		};
+		C704970F1874D5A9005A8439 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C70497101874D5A9005A8439 /* NetChatTests-Info.plist */,
+				C70497111874D5A9005A8439 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C70496E01874D5A8005A8439 /* NetChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C70497191874D5A9005A8439 /* Build configuration list for PBXNativeTarget "NetChat" */;
+			buildPhases = (
+				C70496DD1874D5A8005A8439 /* Sources */,
+				C70496DE1874D5A8005A8439 /* Frameworks */,
+				C70496DF1874D5A8005A8439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetChat;
+			productName = NetChat;
+			productReference = C70496E11874D5A8005A8439 /* NetChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C70497061874D5A8005A8439 /* NetChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C704971C1874D5A9005A8439 /* Build configuration list for PBXNativeTarget "NetChatTests" */;
+			buildPhases = (
+				C70497021874D5A8005A8439 /* Sources */,
+				C70497031874D5A8005A8439 /* Frameworks */,
+				C70497041874D5A8005A8439 /* Resources */,
+				C70497051874D5A8005A8439 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C704970D1874D5A8005A8439 /* PBXTargetDependency */,
+			);
+			name = NetChatTests;
+			productName = NetChatTests;
+			productReference = C70497071874D5A8005A8439 /* NetChatTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C70496D91874D5A7005A8439 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NetChat;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = TypeDynamic;
+			};
+			buildConfigurationList = C70496DC1874D5A7005A8439 /* Build configuration list for PBXProject "NetChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C70496D81874D5A7005A8439;
+			productRefGroup = C70496E21874D5A8005A8439 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C70496E01874D5A8005A8439 /* NetChat */,
+				C70497061874D5A8005A8439 /* NetChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C70496DF1874D5A8005A8439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70496EF1874D5A8005A8439 /* InfoPlist.strings in Resources */,
+				C70496F71874D5A8005A8439 /* Default.png in Resources */,
+				C70496F91874D5A8005A8439 /* Default@2x.png in Resources */,
+				C70496FB1874D5A8005A8439 /* Default-568h@2x.png in Resources */,
+				C70496FE1874D5A8005A8439 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70497041874D5A8005A8439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70497131874D5A9005A8439 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C70497051874D5A8005A8439 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C70496DD1874D5A8005A8439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70496F11874D5A8005A8439 /* main.m in Sources */,
+				C70496F51874D5A8005A8439 /* NetChatAppDelegate.m in Sources */,
+				C70497011874D5A8005A8439 /* NetChatViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70497021874D5A8005A8439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70497161874D5A9005A8439 /* NetChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C704970D1874D5A8005A8439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C70496E01874D5A8005A8439 /* NetChat */;
+			targetProxy = C704970C1874D5A8005A8439 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C70496ED1874D5A8005A8439 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C70496EE1874D5A8005A8439 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C70496FC1874D5A8005A8439 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C70496FD1874D5A8005A8439 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		C70497111874D5A9005A8439 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C70497121874D5A9005A8439 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C70497171874D5A9005A8439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C70497181874D5A9005A8439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C704971A1874D5A9005A8439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NetChat/NetChat-Prefix.pch";
+				INFOPLIST_FILE = "NetChat/NetChat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C704971B1874D5A9005A8439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NetChat/NetChat-Prefix.pch";
+				INFOPLIST_FILE = "NetChat/NetChat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C704971D1874D5A9005A8439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NetChat.app/NetChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NetChat/NetChat-Prefix.pch";
+				INFOPLIST_FILE = "NetChatTests/NetChatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C704971E1874D5A9005A8439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NetChat.app/NetChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NetChat/NetChat-Prefix.pch";
+				INFOPLIST_FILE = "NetChatTests/NetChatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C70496DC1874D5A7005A8439 /* Build configuration list for PBXProject "NetChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70497171874D5A9005A8439 /* Debug */,
+				C70497181874D5A9005A8439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C70497191874D5A9005A8439 /* Build configuration list for PBXNativeTarget "NetChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C704971A1874D5A9005A8439 /* Debug */,
+				C704971B1874D5A9005A8439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C704971C1874D5A9005A8439 /* Build configuration list for PBXNativeTarget "NetChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C704971D1874D5A9005A8439 /* Debug */,
+				C704971E1874D5A9005A8439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C70496D91874D5A7005A8439 /* Project object */;
+}

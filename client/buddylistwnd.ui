@@ -1,0 +1,180 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>buddyListWnd</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>buddyListWnd</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>250</width>
+            <height>490</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>21</width>
+            <height>85</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>250</width>
+            <height>490</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Buddy List</string>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>msgBt</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>389</y>
+                <width>71</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Msg</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>xferFileBt</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>100</x>
+                <y>390</y>
+                <width>110</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Transfer File</string>
+        </property>
+    </widget>
+    <widget class="QListBox">
+        <property name="name">
+            <cstring>buddyListBox</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>19</y>
+                <width>191</width>
+                <height>361</height>
+            </rect>
+        </property>
+    </widget>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>MenuBarEditor</cstring>
+    </property>
+    <item text="File" name="File">
+        <action name="menuSigninAction"/>
+        <action name="fileExitAction"/>
+    </item>
+</menubar>
+<toolbars>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>msgUser</cstring>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>xferFileToUser</cstring>
+        </property>
+        <property name="text">
+            <string>Action</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>menuSigninAction</cstring>
+        </property>
+        <property name="text">
+            <string>Signin</string>
+        </property>
+        <property name="menuText">
+            <string>Signin</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Exit</string>
+        </property>
+        <property name="menuText">
+            <string>Exit</string>
+        </property>
+    </action>
+</actions>
+<connections>
+    <connection>
+        <sender>msgBt</sender>
+        <signal>clicked()</signal>
+        <receiver>msgUser</receiver>
+        <slot>activate()</slot>
+    </connection>
+    <connection>
+        <sender>xferFileBt</sender>
+        <signal>clicked()</signal>
+        <receiver>xferFileToUser</receiver>
+        <slot>activate()</slot>
+    </connection>
+    <connection>
+        <sender>buddyListBox</sender>
+        <signal>doubleClicked(QListBoxItem*)</signal>
+        <receiver>msgUser</receiver>
+        <slot>activate()</slot>
+    </connection>
+    <connection>
+        <sender>msgUser</sender>
+        <signal>activated()</signal>
+        <receiver>buddyListWnd</receiver>
+        <slot>msgUserNow()</slot>
+    </connection>
+    <connection>
+        <sender>xferFileToUser</sender>
+        <signal>activated()</signal>
+        <receiver>buddyListWnd</receiver>
+        <slot>xferFileNow()</slot>
+    </connection>
+    <connection>
+        <sender>menuSigninAction</sender>
+        <signal>activated()</signal>
+        <receiver>buddyListWnd</receiver>
+        <slot>menuSigninAction_activated()</slot>
+    </connection>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>buddyListWnd</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">buddylistwnd.ui.h</include>
+</includes>
+<variables>
+    <variable>QString myScreenName;</variable>
+</variables>
+<slots>
+    <slot>msgUserNow()</slot>
+    <slot>xferFileNow()</slot>
+    <slot>menuSigninAction_activated()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

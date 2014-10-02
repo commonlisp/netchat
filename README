@@ -1,0 +1,85 @@
+README
+
+George Kuan
+Network Chat Program NetChat
+
+BUILDING 
+
+This chat program uses the QT GUI toolkit for GUI support. 
+In order to build the client and server from the source, you must 
+install the QT 3.3.x developer's kit from www.trolltech.com. 
+Although the server uses the qmake for a build environment, it 
+does not have a GUI, only the client has a GUI.
+
+As is typical with recent QT programs, you can build the client and server 
+by entering in the appropriate directory (netchat/client and 
+netchat/server respectively), running the following build commands:
+
+qmake -project
+qmake
+make clean
+make
+
+Please ignore any warnings about linebreaks, because the program was 
+written on a Mac.
+
+Alternatively, if you know where your QT development libraries are, 
+you may modify the pregenerated Makefiles directly.
+
+Congratulations. You should have a build of NetChat client or server.
+
+USAGE
+
+You can set what ports the client uses for TCP server connection, UDP chat,
+and TCP file transfer in that order via command line arguments separated by
+spaces. For example, ./client 9000 8000 7000 connects to port 9000 on the 
+server, port 8000 for UDP chat messaging reception, and port 7000 for file 
+transfer reception. Similarly, ./server 9000 forces the server to listen on
+port 9000.
+
+Without these command line arguments, the program defaults to port 8101 for
+the server, port 8098 for chat, and port 8100 for file transfer. 
+
+In the client GUI program, please choose the File menu and the Signin menu
+item to start the signin process. Enter the desired login name and the
+server's hostname. To message a user, double-click on the user's login name
+in the buddy list and start messaging. To initiate file transfer, simply 
+select the target user and then the File Xfer button to choose a file to 
+transfer. The files are transferred without flourish directly into the 
+working directory of the client.   
+
+The chat messages are as depicted in the following pictures. The first
+byte is an OPCODE, either 'p' or 'a', indicating chat or ack packet 
+type. The reply port field in the chat message is used only if I cannot
+lookup the chat port of the sender from the server. In the ack packet,
+the timestamp is that of the chat packet we are acknowledging. And the
+screen name is the login name of the sender of the packet we are 
+acknowledging.
+
+UDP Chat Message Packet
+0	 7	  15	  23	    31	     39 (bits)
++--------+--------+--------+--------+--------+
+|  'p'   |   Reply Port (32 bits) [Backup]   |
++--------+--------+--------+--------+--------+
+|               Timestamp (64-bits)          | 
++			   +--------+--------+
+|                          |	 Packet ...  >
++-----------------+--------+-----------------+
+< Length (32-bits)|			     |
++-----------------+			     +
+|      ... Payload (Msg/Sender SN) ...	     |
++--------------------------------------------+
+
+UDP Ack Packet
+0	 7	 15	  23	   31	    39
++--------+--------+--------+--------+--------+
+| 'a'    | 	      Timestamp	    	     |
++--------+			    +--------+
+| 	                    	    | SN ... >
++--------------------------+--------+--------+
+<   ...	Length	   	   | Screen Name of  |
++--------------------------+		     +
+|(The client whose packet I'm acknowledging) |
++					     +
+|					     |
++--------------------------------------------+
